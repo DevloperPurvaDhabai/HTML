@@ -5,6 +5,8 @@
     </head>
     <body>
         <form>
+            <fieldset>
+                <legend>Admission Form</legend>
             <!--Form tags in html-->
             <!--Personal information-->
             <label>Enter your first name</label>
@@ -16,6 +18,9 @@
             <label>Enter your age</label>
             <input type="number">
             <br/><br/>
+            <label>Enter your date of birth:</label>
+            <input type="datetime-local"/>
+            <br/><br/>
             <!--contact information-->
             <label>Enter your email:</label>
             <input type="email">
@@ -26,6 +31,27 @@
             <label>Enter your address:</label>
             <input type="text">
             <br/><br/>
+            <label for="courses">Select your courses:</label>
+            <select name="courses" id="">
+                <optgroup label="Backend">
+                <option value="python">Python</option>
+                <option value="c">C</option>
+                <option value="java">Java</option>
+            </optgroup>
+                <optgroup label="Frontend">
+                <option value="designing">Designing</option>
+                <option value="web layouting">Web Layouting</option>
+                <option value="javascript">Javascript</option>
+           </optgroup>
+           <optgroup label="Communication">
+            <option value="english">English</option>
+            <option valu="soft-skills">Soft-Skills</option>
+            <option value="interview-practice">Interview Practice</option>
+           </optgroup>
+                </select>
+                <br/><br/>
+                <label for="communication">Range your communication skills:</label>
+                <input type="range" name="communication" min="0" max="10">
             <!--input type radio-->
             <input type="radio" name="gender">
             <label>Male</label>
@@ -39,6 +65,7 @@
             <input type="checkbox"><label>Swimming</label>
             <br/><br/>
             <input type="Submit">
+        </fieldset>
         </form>
     </body>
 </html>
