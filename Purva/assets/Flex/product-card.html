@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Product card</title>
+        <link rel="stylesheet" href="./portfolio.css">
+        <style>
+            .product-container{
+                width: 100%;
+                gap: 30px;
+                height: 130vh;
+                
+                background: linear-gradient(blue,rgb(205, 110, 165));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+     
+     
+            }
+            .products{
+                margin-top: 200;
+                width: 80%;
+                height:auto ;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+
+            }
+            .product-card{
+                width: 20%;
+                height: 400px;
+                background-color: rgb(201, 201, 254);
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+            .card-image{
+                width: 80%;
+                height: 60%;
+                background-color: rgb(220, 163, 163);
+            }
+            .card-content{
+                width: 80%;
+                height: 20%;
+                background-color: chocolate;
+            }
+         </style>
+    </head>
+    
+    <body>
+        <!--header start-->
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header end-->
+    <main class="product-container">
+        <div class="products">
+            <!--card1-->
+            <div class="product-card">
+                <div class="card-image"></div>
+                    <div class="card-content"></div>
+                    <!--card1 end-->
+                
+            </div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            <div class="product-card"></div>
+            
+        </div>
+    </main>
+       
+    </body>
+</html>
