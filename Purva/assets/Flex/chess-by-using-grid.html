@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grid</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 160px 160px 160px 160px 160px 160px 160px 160px;
+        grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+        background-color: black(197, 197, 247);
+        border: solid 2px black;
+
+
+
+    }
+
+    .box {
+        background-color: rgb(215, 214, 243);
+        text-align: center;
+        border: solid 2px rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big-box {
+        grid-column: span 3;
+    }
+
+    .big-row {
+        grid-row: span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box ">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box ">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">17</div>
+        <div class="box">18</div>
+        <div class="box ">19</div>
+        <div class="box">20</div>
+        <div class="box">21</div>
+        <div class="box">22</div>
+        <div class="box">23</div>
+        <div class="box">24</div>
+        <div class="box">25</div>
+        <div class="box">26</div>
+        <div class="box">27</div>
+        <div class="box">28</div>
+        <div class="box">29</div>
+        <div class="box">30</div>
+        <div class="box ">31</div>
+        <div class="box">32</div>
+        <div class="box">33</div>
+        <div class="box">34</div>
+        <div class="box">35</div>
+        <div class="box">36</div>
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
