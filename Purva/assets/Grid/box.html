@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Box</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 50%;
+        height: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr,1fr);
+        grid-template-rows: repeat(4,1fr,1fr,1fr);
+        background-color: black(197, 197, 247);
+    }
+
+    .box {
+        background-color: rgb(215, 214, 243);
+        text-align: center;
+        border: solid 2px rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
