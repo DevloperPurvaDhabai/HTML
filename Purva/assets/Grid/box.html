@@ -22,22 +22,34 @@
         display: grid;
         grid-template-columns: repeat(3,1fr,1fr);
         grid-template-rows: repeat(4,1fr,1fr,1fr);
-        background-color: black(197, 197, 247);
+        background-color: rgb(244, 225, 202);
+        border: solid 2px black;
+       
     }
 
     .box {
-        background-color: rgb(215, 214, 243);
+       height: 100px;
+       width: 100px;
         text-align: center;
         border: solid 2px rgb(0, 0, 0);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        
     }
 </style>
 
 <body>
     <div class="container">
         <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        
+        
     </div>
 
 </body>
