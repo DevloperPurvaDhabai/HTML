@@ -6,52 +6,96 @@
 </head>
 <style>
     body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100vw;
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: aliceblue;
     }
 
     .container {
-        width: 50%;
-        height: 90%;
+        width: 700px;
+        height: 700px;
+        background-color: white;
         display: grid;
-        grid-template-columns: repeat(3,1fr,1fr);
-        grid-template-rows: repeat(4,1fr,1fr,1fr);
-        background-color: rgb(244, 225, 202);
-        border: solid 2px black;
-       
+        grid-template-columns: repeat(8, 1fr);
+        gap: 3px;
+
+
+
     }
 
     .box {
-       height: 100px;
-       width: 100px;
+        background-color: bisque;
+        border: 2px solid black;
         text-align: center;
-        border: solid 2px rgb(0, 0, 0);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         
-        
+    }
+
+
+
+    /* short hand for span */
+    .box-one {
+        grid-column: span 8 ;
+        background-color: aqua;
+       
+    }
+    .box-two{
+        grid-row: span 3;
+        grid-column: span 3;
+        background-color: rgb(209, 186, 230);
+    }
+    .box-three{
+        grid-row: span 5;
+        grid-column: span 3;
+        background-color: rgb(111, 146, 112);
+       
+    }
+    .box-four{
+        grid-row: span 6;
+        grid-column: span 5;
+        background-color: rgb(213, 169, 111);
+    }
+    .box-five{
+        grid-row: span 2;
+        grid-column: span 5;
+        background-color: rgb(120, 104, 104);
+    }
+    .box-six{
+        grid-row: span 2;
+        grid-column: span 6;
+        background-color: green;
+    }
+    .box-seven{
+        grid-row: span 2;
+        grid-column: span 2;
+        background-color: pink;
+    }
+    .box-eight{
+        grid-row: span 1;
+        grid-column: span 8;
+        background-color: chocolate;
     }
 </style>
 
 <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box box-one">Header</div>
+        <div class="box box-two">Hero</div>
+        <div class="box box-four">Main Content</div>
+        <div class="box box-three">Sidebar</div>
+        <div class="box box-five">Extra Content</div>
+        <div class="box box-six">Related Images</div>
+        <div class="box box-seven">Related Posts</div>
+        <div class="box box-eight">Footer</div>
         
         
-    </div>
+        
 
+        
+
+
+    </div>
 </body>
 
 </html>
+   
