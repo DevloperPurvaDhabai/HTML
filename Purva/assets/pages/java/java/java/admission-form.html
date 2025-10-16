@@ -93,7 +93,7 @@
                 <!--personal information-->
                 <h2> 🍁✨Information About Student✨🍁</h2>
                 <label>Full Name</label>
-                <textarea name=""   id=""></textarea>
+                <textarea name=""   id="fullName"></textarea>
             <br/><br/>
                 <label>Date of Birth</label>
                 <input type="date">
@@ -160,12 +160,12 @@
     <script>
         // function => block of code which does a specific task
         function showOutput() {
-            let x = document.getElementById("input-one").value;
-            let y = Number(document.getElementById("input-two").value);
+            let fullName = document.getElementById("fullName").value;
+            let dateOfBirth = document.getElementById("input-two").value;
     
     
            
-            document.getElementById("display").innerHTML = "Full Name : " + (x) + "<br> Date of Birth :" + (y);
+            document.getElementById("display").innerHTML = "Full Name : " + fullName + "<br> Date of Birth :" + dateOfBirth;
 
            
     
