@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cafe</title>
+</head>
+<style>
+    .main-container {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+
+    }
+
+    .upper-container {
+        background-color: black;
+        height: 50%;
+        width: 100%;
+        color: white;
+    }
+
+    .first-row {
+        background-color: black;
+        height: 40px;
+        width: 1400px;
+        color: white;
+
+    }
+
+    .one {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 30px;
+        width: 1100px;
+        text-align: center;
+    }
+
+
+
+    .box-one {
+        background-color: black;
+        height: 20px;
+        width: 80px;
+
+    }
+
+    .box-two {
+        background-color: black;
+        height: 20px;
+        width: 90px;
+
+    }
+
+    .box-three {
+        background-color: black;
+        height: 20px;
+        width: 80px;
+    }
+
+    .box-four {
+        background-color: black;
+        height: 20px;
+        width: 80px;
+    }
+
+    .box-five {
+        background-color: black;
+        height: 20px;
+        width: 80px;
+        border-color: orange;
+        background-color: rgb(185, 121, 75);
+    }
+
+    .box-six {
+        background-color: rgb(186, 107, 3);
+        height: 20px;
+        width: 80px;
+    }
+
+    .box-seven {
+        background-color: rgb(24, 228, 54);
+        height: 20px;
+        width: 80px;
+    }
+
+    .second-row {
+        background-color: black;
+        height: 400px;
+        width: 1400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .lower-container {
+        background-color: white;
+        height: 45%;
+        width: 100%;
+    }
+
+    .two {
+        background-color: white;
+        height: 20px;
+        width: 1200px;
+    }
+
+    .three {
+        background-color: white;
+        height: 20px;
+        width: 1400px;
+        text-align: center;
+    }
+
+    .five {
+        background-color: white;
+        height: 20px;
+        width: 1400px;
+    }
+
+    .four {
+        background-color: white;
+        height: 200px;
+        width: 1300px;
+        display: flex;
+        flex-direction: row;
+        
+        gap: 10px;
+
+    }
+
+    .six {
+        background-color: white;
+        height: 200px;
+        width: 200px;
+        border-style: solid;
+        text-align: center;
+        
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .seven {
+        background-color: white;
+        height: 200px;
+        width: 220px;
+        border-style: solid;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eight {
+        background-color: white;
+        height: 200px;
+        width: 220px;
+        border-style: solid;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nine {
+        background-color: white;
+        height: 200px;
+        width: 220px;
+        border-style: solid;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ten {
+        background-color: white;
+        height: 200px;
+        width: 220px;
+        border-style: solid;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eleven {
+        background-color: white;
+        height: 200px;
+        width: 220px;
+
+    }
+
+    .twelve {
+        background-color: white;
+        height: 20px;
+        width: 100px;
+        border-style: solid;
+        border-color: chocolate;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+    }
+
+    .thirteen {
+        background-color: white;
+        height: 20px;
+        width: 200px;
+        border-style: solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forteen {
+        background-color: rgb(241, 245, 247);
+        height: 20px;
+        width: 200px;
+    }
+
+    .fifteen {
+        background-color: rgb(248, 249, 248);
+        height: 20px;
+        width: 200px;
+    }
+
+    .sixteen {
+        background-color: rgb(249, 250, 249);
+        height: 20px;
+        width: 200px;
+    }
+
+    .seventeen {
+        background-color: white;
+        height: 20px;
+        width: 200px;
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="upper-container">🧑‍🍳 FaceDE Cafe
+            <div class="first-row">
+                <div class="one">
+                    <div class="box-one">Home</div>
+                    <div class="box-two">Reseravation</div>
+                    <div class="box-three">About</div>
+                    <div class="box-four">Gallary</div>
+                    <div class="box-five">Menu</div>
+                </div>
+                <div class="second-row"><img
+                        src="https://media.istockphoto.com/id/1218963825/photo/lovely-little-independent-coffee-shop.jpg?s=612x612&w=0&k=20&c=NQRhAv5RoxextkRUFr_0ZdcVXNrwPIHYo670R9PeYYc="
+                        height="300px" width="500px">
+                    <img src="https://c.pxhere.com/photos/35/6c/housefront_facade_exterior-763515.jpg!d" height="300px"
+                        width="450px">
+                    <img src="https://t3.ftcdn.net/jpg/07/66/38/12/360_F_766381285_P6cqEt7HyM6fVehVDCjkxO7lNwTSn8dg.jpg"
+                        height="300px" width="450px">
+                </div>
+
+            </div>
+
+        </div>
+        <div class="lower-container">
+            <div class="two"></div>
+
+            <div class="three"><b><i>Best-Selling</i></b></div>
+            <div class="five"></div>
+            <div class="four">
+                <div class="six"><img
+                        src="https://www.awesomecuisine.com/wp-content/uploads/2018/07/cabbage_manchurian_dry.jpg"
+                        height="150px" width="200px">
+                    <div class="thirteen"><i>Manchurian</i></div>
+                    <div class="twelve">Order Now</div>
+                </div>
+                <div class="seven"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBVsDB_3nt83Sw3oHg4HJhhQMZnf3KvFF6FQ&s"
+                        height="150px" width="220px">
+                    <div class="forteen"><i>Chaumin</i></div>
+                    <div class="twelve">Order Now</div>
+                </div>
+                <div class="eight"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_BC6_LZWpkkneGehYOLBsBHrFx7Jr_LUcQ&s"
+                        width="220px" height="150px">
+                    <div class="fifteen"><i>White Pasta</i></div>
+                    <div class="twelve">Order Now</div>
+                </div>
+                <div class="nine"><img
+                        src="https://preview.redd.it/an-attempt-to-make-tarri-poha-in-japan-with-available-v0-8ppdpq551tgc1.jpeg?width=1080&crop=smart&auto=webp&s=670f1e12348ffb87c3e4c142074506cc1baf2aad"
+                        height="150px" width="220px">
+                    <div class="sixteen"><i>Tari Poha</i></div>
+                    <div class="twelve">Order Now</div>
+                </div>
+                <div class="ten"><img src="https://i.pinimg.com/736x/33/9b/b9/339bb9d3758a6078c7f8a7db996b0854.jpg"
+                        height="150px" width="220px">
+                    <div class="seventeen"><i>Pav Bhaji</i></div>
+                    <div class="twelve">Order Now</div>
+                </div>
+                <div class="eleven"><img
+                        src="https://e7.pngegg.com/pngimages/500/832/png-clipart-dining-fork-knife-and-spoon-fork-table-knife-spoon-cutlery-western-cutlery-spoon-kitchen-happy-birthday-vector-images.png"
+                        width="210px" height="260px"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
