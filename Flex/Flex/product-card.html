@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product card</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <style>
+        .product-container {
+            width: 100%;
+            gap: 30px;
+            height: 130vh;
+
+            background: linear-gradient(blue, rgb(205, 110, 165));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+
+        .products {
+            margin-top: 200;
+            width: 80%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+        .product-card {
+            width: 20%;
+            height: 400px;
+            background-color: rgb(201, 201, 254);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .card-image {
+            width: 80%;
+            height: 60%;
+            background-color: rgb(220, 163, 163);
+        }
+
+        .card-content {
+            width: 80%;
+            height: 20%;
+            background-color: chocolate;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header start-->
+    <header>
+        <div class="logo">
+            <h1>Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Project</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!--header end-->
+    <main class="product-container">
+        <div class="products">
+            <!--card1-->
+            <div class="product-card">
+                <div class="card-image"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKqR8DRsAKj2KKJUPgfz0NS7wz8ekmqdiszE2brNiDDhsxFfE0Omj7n3TER8Hwcekz-hA&usqp=CAU">
+                </div>
+                <div class="card-content">
+                    <h1><i>Mouse</i></h1>
+                    <h3>$ 800</h3>
+                </div>
+                <!--card1 end-->
+
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img
+                        src="https://img.freepik.com/free-photo/cozy-workspace-with-keyboard-stationary_23-2147830040.jpg?semt=ais_hybrid&w=740&q=80">
+                </div>
+                <div class="card-content">
+                    <h1><i>Keyboard</i></h1>
+                    <h3>$ 500</h3>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img
+                        src="https://img.freepik.com/premium-photo/art-background-abstract-drawing-banner-printer-graphic-multicolored-ink-colorful-print-rainbow-design-paint_163305-240217.jpg">
+                </div>
+                <div class="card-content">
+                    <h1><i>Printer</i></h1>
+                    <h3>$ 1000</h3>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img
+                        src="https://media.wired.com/photos/68532be87b92ee90b043764b/master/w_1600%2Cc_limit/LG-MyView-Smart-Monitor-Front-View-Screen-Reviewer-Photo-SOURCE-Nena-Farrell.png">
+                </div>
+                <div class="card-content">
+                    <h1><i>Monitor</i></h1>
+                    <h3>$ 5000</h3>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img src="https://i.ytimg.com/vi/2VbPta6xBww/sddefault.jpg"></div>
+                <div class="card-content">
+                    <h1><i>Radio</i></h1>
+                    <h3>$ 6500</h3>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img
+                        src="https://static4.depositphotos.com/1012094/302/v/950/depositphotos_3026349-stock-illustration-vector-artistic-mic-background.jpg">
+                </div>
+                <div class="card-content"><h1><i>Mike</i></h1><h3>$ 800</h3></div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img src="https://img.joomcdn.net/7a287f35e4ae0959c9a1efc2c71d1805b2dd6990_original.jpeg"></div>
+                <div class="card-content"><h1><i>Headphone</i></h1><h3>$ 1200</h3></div>
+            </div>
+            <div class="product-card">
+                <div class="card-image"><img src="https://childangle.com/cdn/shop/files/kuromi-airpod-case-22.jpg?v=1748385950&width=1445"></div>
+                <div class="card-content"><h1><i>Airpods</i></h1><h3>$ 9000</h3></div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
