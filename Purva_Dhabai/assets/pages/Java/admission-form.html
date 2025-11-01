@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admission Form</title>
+</head>
+<style>
+    body {
+        height: ;
+        width: ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+    }
+
+    .main-container {
+        width: 500px;
+        height: 300px;
+        background-color: white;
+        border: 2px solid black;
+
+
+    }
+
+    .container {
+        height: 90%;
+        justify-content: space-between;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: ;
+
+    }
+
+    .display-area {
+
+        width: 100%;
+        height: 85%;
+        background-color: rgb(170, 213, 241);
+        border: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-area {
+        width: 100%;
+        height: 20%;
+        background-color: beige;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .input-field {
+        height: 50%;
+
+    }
+
+    .click-button {
+        width: 15%;
+        height: 70%;
+        background-color: rgb(243, 156, 124);
+        border: solid lightcoral;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+
+
+
+    }
+
+   
+</style>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Admission Form</legend>
+            <br /><br />
+            <!--form tags in html-->
+
+            <!--personal information-->
+            <h2> 🍁✨Information About Student✨🍁</h2>
+            <label>Full Name</label>
+            <textarea name="" id="full-name"></textarea>
+            <br /><br />
+            <label>Date of Birth</label>
+            <input type="date" id="date">
+            <br /><br />
+            <label>Phone Number</label>
+            <input type="number" id="number">
+            <br /><br />
+            <label>Email Address</label>
+            <input type="email">
+            <br /><br />
+            <label>Address</label>
+            <textarea name="" id=""></textarea>
+            <br /><br />
+
+            <!--identification information-->
+            <h2>🍁✨Identification Information✨🍁</h2>
+            <label>ID Type</label>
+            <input type="text">
+            <br /><br />
+            <label>ID Number</label>
+            <input type="number">
+            <br /><br />
+
+            <!--account information-->
+            <h2>🍂✨Parents Information ✨🍂</h2>
+            <label>Mother Name</label>
+            <input type="text"><br><br>
+            <label>Father Name</label>
+            <input type="text"><br><br>
+            <label>Occupation</label>
+            <input type="text">
+            <br /><br />
+            <label>Initial Deposite</label>
+            <input type="text">
+            <br /><br />
+            <p>I hereby confirm that the information provided is accurate to the best of<br /> my
+                knowledge. I also agree to provide a admission.</p>
+            <br /><br />
+            <label>Signature</label>
+            <input type="text">
+            <br /><br />
+            <label>Date</label>
+            <input type="date">
+            <br /><br />
+
+        </fieldset>
+    </form>
+    <div class="main-container">
+        <div class="container">
+            <div class="display-area" id="display">
+                <div class="boxd-one">
+                    <p Full Name :   id="fullname">Full Name</p>
+                    <p date :  id="date">Date of Birth</p>
+                    <P Phone Number :   id="number">Phone Number</P>
+                </div>
+            </div>
+            <div class="boxd-one"></div>
+            <div class="input-area">
+
+                <button class="click-button" onclick="showOutput()">Click</button>
+            </div>
+        </div>
+    </div>
+
+    <!--<div id="display" ></div>
+        <input type="text" > <button onclick="showOutput()">Click me</button>-->
+</body>
+<script>
+    // function => block of code which does a specific task
+    function showOutput() {
+        let fullName = document.getElementById("full-name").value;
+        let dateOfBirth = document.getElementById("date").value;  //31/10/2005
+        let phonenumber = document.getElementById("number").value;
+
+
+
+        document.getElementById("fullname").innerHTML = fullName;
+        document.getElementById("dateofbirth").innerHTML = date;
+        document.getElementById("phonenumber").innerHTML = number;
+
+
+
+
+    }
+</script>
+
+</html>

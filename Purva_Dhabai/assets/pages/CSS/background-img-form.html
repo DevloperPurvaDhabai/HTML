@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Background Img</title>
+</head>
+<style>
+    body {
+        background-image: url(https://www.worldofwallpaper.com/media/catalog/product/cache/cb6d4e8db131c61a8cb54c52a893246a/d/e/dec132_apex_geometric_wallpaper_rose_ae1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    form {
+        width: 50%;
+        margin-left: 30vw;
+        margin-top: 30vh;
+    }
+</style>
+
+<body>
+    <form action="./Practice-Form.html">
+        <fieldset>
+            <legend>Admission Form</legend>
+            <!--Form tags in html-->
+            <!--Personal information-->
+            <label></label>
+            <input placeholder="Enter your name">
+            <label>Enter your first name</label>
+            <input type="text">
+            <br /><br />
+            <label>Enter your last name</label>
+            <input type="text">
+            <br /><br />
+            <label>Enter your age</label>
+            <input type="number">
+            <br /><br />
+            <label>Enter your date of birth:</label>
+            <input type="datetime-local" />
+            <br /><br />
+            <!--contact information-->
+            <label>Enter your email:</label>
+            <input type="email">
+            <br /><br />
+            <label>Enter mobile number:</label>
+            <input type="number">
+            <br /><br />
+            <label>Enter your address:</label>
+            <textarea name="" id=""></textarea>
+            <br /><br />
+            <label for="courses">Select your courses:</label>
+            <select name="courses" id="">
+                <optgroup label="Backend">
+                    <option value="python">Python</option>
+                    <option value="c">C</option>
+                    <option value="java">Java</option>
+                </optgroup>
+                <optgroup label="Frontend">
+                    <option value="designing">Designing</option>
+                    <option value="web layouting">Web Layouting</option>
+                    <option value="javascript">Javascript</option>
+                </optgroup>
+                <optgroup label="Communication">
+                    <option value="english">English</option>
+                    <option valu="soft-skills">Soft-Skills</option>
+                    <option value="interview-practice">Interview Practice</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            <label for="communication">Range your communication skills:</label>
+            <input type="range" name="communication" min="0" max="10">
+            <!--input type radio-->
+            <input type="radio" name="gender">
+            <label>Male</label>
+            <input type="radio" name="gender">
+            <label>Female</label>
+            <br /><br />
+            <label>Select hobbies:</label>
+            <input type="checkbox"><label>Reading</label>
+            <input type="checkbox"><label>Writing</label>
+            <input type="checkbox"><label>Playing</label>
+            <input type="checkbox"><label>Swimming</label>
+            <br /><br />
+            <label>Enter your password</label>
+            <input type="password">
+            <br /><br />
+            <label>Color</label>
+            <input type="color">
+            <br /><br />
+            <label>Enter your file</label>
+            <input type="file">
+            <br /><br />
+
+            <input type="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
