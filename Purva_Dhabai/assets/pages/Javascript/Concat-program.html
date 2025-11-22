@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+</head>
+<style>
+    .main_container {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(233, 142, 23);
+        border-radius: 10px;
+    }
+    .box1 {
+        height: 50vh;
+        width: 100vw;
+        background-color: rgb(189, 216, 223);
+        border-radius: 10px;
+
+    }
+    .box2 {
+        height: 50vh;
+        width: 100vw;
+        background-color: rgb(189, 216, 223);
+        border-radius: 10px;
+
+    }
+</style>
+<body>
+    
+    <p id="display"></p>
+       <input type="text" id="box-1" placeholder="Enter first name">
+       <input type="text" id="box-2" placeholder="Enter second name">
+        <button onclick="str()">Concat</button>
+
+    <script>
+        function str(){
+            let one = document.getElementById("box-1").value;
+            let two = document.getElementById("box-2").value;
+            let result = one + " " + two;
+            document.getElementById("display").innerHTML = result;
+
+
+        }
+    </script>
+</body>
+</html>

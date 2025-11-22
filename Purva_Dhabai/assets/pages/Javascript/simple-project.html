@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program</title>
+</head>
+<style>
+    body{
+       width: 100vw;
+       height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .message-box{
+        width: 70%;
+        height: 80%;
+        box-shadow: 5px 5px 50px 2px rgb(196, 209, 219);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: antiquewhite;
+
+    }
+    button{
+        padding: 10px;
+        border-radius: 20px;
+        background-color: brown;
+        font-size: 30px;
+        justify-content: center;
+
+ 
+ }
+ p{
+       color: red;
+ }
+</style>
+<body>
+    <div class="message-box">
+        <button onclick="showMessage()">Click</button>
+        <p id="display"></p>
+    </div>
+   
+   <script>
+    function showMessage(){
+        let messsage = "Welcome to javascript"
+        document.getElementById("display").innerHTML = messsage;
+    }
+   </script>
+
+   
+</body>
+</html>
