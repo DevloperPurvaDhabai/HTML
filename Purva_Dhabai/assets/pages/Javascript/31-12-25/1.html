@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+<body>
+    <script>
+        let number = Number(prompt("Enter a number : "))
+        let factorial = 1 //product of factorials
+        let row = "" //print ofg systax
+        let a = 1
+        while(a <= number){
+            row = row + a + " x "
+            factorial = factorial * a //used concatination
+            a++;
+        }
+        console.log("Factorial : "+row);
+        console.log(factorial)
+    </script>
+</body>
+</html>
