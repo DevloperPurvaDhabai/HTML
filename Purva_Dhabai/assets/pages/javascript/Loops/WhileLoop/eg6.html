@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <input type="text" id="dis">
+        <button onclick="X()">Click</button>
+        <script>
+            function X() { 
+            let word = document.getElementById("inp").value;
+            let y = 0;
+            while(y <=10){
+                let charOutput = "";
+                charOutput += word.charAT(y) + "<br>"
+                console.log(charOutput);
+                document.getElementById("dis"),innerHTML += charOutput;
+                Y--;
+                }
+                
+            }
+        
+            
+        </script>
+    </body>
+</html>

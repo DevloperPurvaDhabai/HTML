@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <input type="text" id="key" placeholder="Enter a key" onkeydown="b()">
+        <div id="d"></div><br>
+        <button onclick="a()">Click 1</button>
+        <button ondblclick="a()">Double Click</button>
+        <button onmouseleave="a()">Leave Mouse</button>
+        <button onmouseover="a()">Mouse Over</button>
+        <button onkeypress="a()">Keypress</button>
+    </body>
+    <script>
+        function a(){
+            document.getElementById("d").innerHTML = "Hi"
+        }
+    </script>
+</html>

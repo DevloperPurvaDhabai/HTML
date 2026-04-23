@@ -1,0 +1,68 @@
+<html>
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: beige;
+    }
+    input{
+        height: 50px;
+        width: 300px;
+        margin: 10px;   
+    }
+
+    .display-box{
+        width: 60%;
+        height: 200px;
+        margin: 10px;
+        background-color: rgb(249, 250, 250);
+        border: solid 1px black;
+
+    }
+
+    h1{
+        font-size: 200%;
+    }
+
+    button{
+        height: 40px;
+        width: 200px;
+        color: blueviolet;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>JavaScript Class</h1>
+        <input type="text" id="input-one">
+        <input type="text" id="input-two">
+        <input type="text" id="input-three">
+        <div class="display-box" id="display"></div>
+        <button onclick="myFunction()">Click Me</button>
+
+    </div>
+</body>
+<script>
+    //function is a block of code that performs a specific task
+
+    //1. Function Declaration
+    function myFunction() {
+       let x = document.getElementById("input-one").value;
+       let y = document.getElementById("input-two").value;
+       let b = document.getElementById("input-three").value;
+
+      document.getElementById("display").innerHTML ="Name : " + x + "<br>" + "Last Name : " + y + "<br>" + "Address : " + b;
+       document.getElementById("display").style ="color : blue; font-size : 20px; font-weight : bold; text-align : center";
+       console.log(z);
+
+    }
+
+    //calling the function
+    myFunction();
+
+</script>
+
+</html>

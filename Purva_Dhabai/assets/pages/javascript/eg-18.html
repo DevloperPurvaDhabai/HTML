@@ -1,0 +1,37 @@
+<html>
+<style>
+    .display{
+
+    }
+</style>
+<form id="studentForm" onsubmit="return handleSubmit(event)" ; width: 250px; style="display: grid; gap: 10px">
+    <h1> Student Form</h1>
+    <h4>Name</h4>
+    <input type="text" id="name" placeholder="Full Name" required>
+    <h4>college name</h4>
+    <input type="text" id="college" placeholder="College Name" required>
+    <h4>Address</h4>
+    <textarea id="address" placeholder="Address" required></textarea>
+    <h4>Mobile Number</h4>
+    <input type="tel" id="mobile" placeholder="Mobile Number" title="Please enter 10 digits"
+        required>
+        <div class="display-box" id="display"></div>
+    <button type="submit">Submit Information</button>
+</form>
+
+<script>
+    function handleSubmit(e) {
+        e.preventDefault(); // Stop page refresh
+        const data = {
+            Name: document.getElementById('name').value,
+            College: document.getElementById('college').value,
+            Address: document.getElementById('address').value,
+            Mobile: document.getElementById('mobile').value
+            document.getElementById("display").innerHTML = z;
+        };
+        console.log("Student Data Collected:", data);
+        alert("Form Submitted! Name: " + data.Name);
+    }
+</script>
+
+</html>

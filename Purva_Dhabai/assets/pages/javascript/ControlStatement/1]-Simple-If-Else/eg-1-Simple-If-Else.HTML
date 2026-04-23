@@ -1,0 +1,16 @@
+<html>
+    <title>Control Statement</title>
+    <body>
+        <input type="text" id="input-one" placeholder="Enter Hear">
+        <button onclick="myFunction()">Click Hear</button>
+        <p id="dis-one"></p>
+        <script>
+            function myFunction(){
+                let age = Number(document.getElementById("input-one").value);
+                let x = age >= 18;
+                document.getElementById("dis-one").innerHTML = x;
+            }
+        </script>
+
+    </body>
+</html>
